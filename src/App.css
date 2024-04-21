@@ -1,0 +1,136 @@
+
+.HomePage{
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 1900px;
+  margin: 0rem auto;
+  background-color: #fbfbff;
+
+
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem 5rem;
+  justify-content: space-between;
+  min-height: 90px;
+  background: radial-gradient(294.57% 265.53% at 215.89% 0%, #0A1027 0%, #232262 100%); 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar-menu-container {
+  display: none;
+}
+.navbar-links-container{
+  display: flex;
+}
+.links,.navbar-links-container button {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.navbar-links-container a.active,
+.navbar-links-container button.active {
+  color: #5846DF; 
+}
+#login {
+  padding: 0.9rem 1.75rem;
+  background: radial-gradient(294.57% 265.53% at 215.89% 0%, #0A1027 0%, #232262 100%);
+  outline: none;
+  border: 2px solid #ffffff;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 200;
+  transition: 0.2s;
+  color: #ffffff;
+}
+.register {
+  padding: 0.9rem 1.75rem;
+  background-color: #5846DF;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 200;
+  transition: 0.2s;
+  color: white;
+}
+
+.primary-button:hover {
+  background-color: rgb(234, 234, 234);
+}
+.navbar-menu-container svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#surround{
+  padding: 0.5rem;
+  background-color: #5846DF;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 200;   
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .pricing-flexing {
+    flex-direction: column;
+  }}
+
+  .pricing-sideImage {
+    width: 100%;
+  }
+
+
+.Pricing-section-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+
+
+@media (max-width: 1000px) {
+  .navbar-links-container a {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .nav-logo-container {
+    max-width: 140px;
+  }
+  .navbar-links-container {
+    display: none;
+  }
+  .navbar-menu-container {
+    display: flex;
+  }
+   
+  .App {
+    max-width: 95vw;
+  }
+}
+@media (max-width: 600px) {
+  .home-bannerImage-container {
+    display: none;
+  }
+}
